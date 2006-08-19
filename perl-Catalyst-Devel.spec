@@ -6,7 +6,7 @@
 %define	pdir	Catalyst
 %define	pnam	Devel
 Summary:	Catalyst::Devel - Catalyst Development Tools
-#Summary(pl):	
+Summary(pl):	Catalyst::Devel - narzêdzia programistyczne Catalyst
 Name:		perl-Catalyst-Devel
 Version:	1.00
 Release:	0.1
@@ -28,16 +28,16 @@ BuildRequires:	perl-Module-Install >= 0.63
 BuildRequires:	perl-Path-Class >= 0.09
 BuildRequires:	perl-Template-Toolkit >= 2.14
 BuildRequires:	perl-YAML >= 0.55
-Requires:	perl-Catalyst-Plugin-ConfigLoader
 %endif
+Requires:	perl-Catalyst-Plugin-ConfigLoader
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-The Catalyst::Devel package includes a variety of modules useful for the
-development of Catalyst applications, but not required to run them. This
-is intended to make it easier to deploy Catalyst apps. The runtime parts of
-Catalyst are now known as Catalyst::Runtime. 
+The Catalyst::Devel package includes a variety of modules useful for
+the development of Catalyst applications, but not required to run
+them. This is intended to make it easier to deploy Catalyst apps. The
+runtime parts of Catalyst are now known as Catalyst::Runtime. 
 
 Catalyst::Devel includes the Catalyst::Helper system, which
 autogenerates scripts and tests; Module::Install::Catalyst, a
@@ -45,9 +45,17 @@ Module::Install extension for Catalyst; and requirements for a
 variety of development-related modules. The documentation remains with
 Catalyst::Runtime.
 
+%description -l pl
+Pakiet Catalyst::Devel zawiera wiele ró¿nych modu³ów przydatnych przy
+tworzeniu aplikacji Catalysta, ale nie wymaganych do ich uruchamiania.
+Jego celem jest u³atwienie tworzenia aplikacji Catalysta. Elementy
+uruchomieniowe Catalysta s± znane jako Catalyst::Runtime.
 
-# %description -l pl
-# TODO
+Catalyst::Devel zawiera: system Catalyst::Helper automatycznie
+generuj±cy skrypty i testy, Module::Install::Catalyst - rozszerzenie
+Module::Install dla Catalysta oraz zale¿no¶ci od wielu ró¿nych modu³ów
+zwi±zanych z tworzeniem aplikacji. Dokumentacja pozostaje w
+Catalyst::Runtime.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -71,7 +79,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes
-%{perl_vendorlib}/Catalyst/*.pm
-%{perl_vendorlib}/Catalyst/
+# ??? there were duplicates
+#%{perl_vendorlib}/Catalyst/*.pm
+%{perl_vendorlib}/Catalyst/*
 %{perl_vendorlib}/Module/Install/*
 %{_mandir}/man3/*
