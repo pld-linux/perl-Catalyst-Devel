@@ -6,7 +6,7 @@
 %define	pdir	Catalyst
 %define	pnam	Devel
 Summary:	Catalyst::Devel - Catalyst Development Tools
-Summary(pl.UTF-8):   Catalyst::Devel - narzędzia programistyczne Catalyst
+Summary(pl.UTF-8):	Catalyst::Devel - narzędzia programistyczne Catalyst
 Name:		perl-Catalyst-Devel
 Version:	1.00
 Release:	0.1
