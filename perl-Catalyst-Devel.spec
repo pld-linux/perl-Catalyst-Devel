@@ -6,7 +6,7 @@
 %define	pdir	Catalyst
 %define	pnam	Devel
 Summary:	Catalyst::Devel - Catalyst Development Tools
-Summary(pl):	Catalyst::Devel - narzêdzia programistyczne Catalyst
+Summary(pl.UTF-8):   Catalyst::Devel - narzÄ™dzia programistyczne Catalyst
 Name:		perl-Catalyst-Devel
 Version:	1.00
 Release:	0.1
@@ -45,16 +45,16 @@ Module::Install extension for Catalyst; and requirements for a
 variety of development-related modules. The documentation remains with
 Catalyst::Runtime.
 
-%description -l pl
-Pakiet Catalyst::Devel zawiera wiele ró¿nych modu³ów przydatnych przy
+%description -l pl.UTF-8
+Pakiet Catalyst::Devel zawiera wiele rÃ³Å¼nych moduÅ‚Ã³w przydatnych przy
 tworzeniu aplikacji Catalysta, ale nie wymaganych do ich uruchamiania.
-Jego celem jest u³atwienie tworzenia aplikacji Catalysta. Elementy
-uruchomieniowe Catalysta s± znane jako Catalyst::Runtime.
+Jego celem jest uÅ‚atwienie tworzenia aplikacji Catalysta. Elementy
+uruchomieniowe Catalysta sÄ… znane jako Catalyst::Runtime.
 
 Catalyst::Devel zawiera: system Catalyst::Helper automatycznie
-generuj±cy skrypty i testy, Module::Install::Catalyst - rozszerzenie
-Module::Install dla Catalysta oraz zale¿no¶ci od wielu ró¿nych modu³ów
-zwi±zanych z tworzeniem aplikacji. Dokumentacja pozostaje w
+generujÄ…cy skrypty i testy, Module::Install::Catalyst - rozszerzenie
+Module::Install dla Catalysta oraz zaleÅ¼noÅ›ci od wielu rÃ³Å¼nych moduÅ‚Ã³w
+zwiÄ…zanych z tworzeniem aplikacji. Dokumentacja pozostaje w
 Catalyst::Runtime.
 
 %prep
