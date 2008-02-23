@@ -8,13 +8,13 @@
 Summary:	Catalyst::Devel - Catalyst Development Tools
 Summary(pl.UTF-8):	Catalyst::Devel - narzędzia programistyczne Catalyst
 Name:		perl-Catalyst-Devel
-Version:	1.02
+Version:	1.03
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	09dd471b600f4dddadc57ee5b56b2d02
+# Source0-md5:	82a4459165e38393eefcdc5a82652f91
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
