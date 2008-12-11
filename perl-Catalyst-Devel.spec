@@ -19,7 +19,6 @@ URL:		http://search.cpan.org/dist/Catalyst-Devel/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl-parent
 BuildRequires:	perl-Catalyst >= 5.7000
 BuildRequires:	perl-Catalyst-Action-RenderView >= 0.04
 BuildRequires:	perl-Catalyst-Plugin-ConfigLoader
@@ -30,6 +29,7 @@ BuildRequires:	perl-Module-Install >= 0.63
 BuildRequires:	perl-Path-Class >= 0.09
 BuildRequires:	perl-Template-Toolkit >= 2.14
 BuildRequires:	perl-YAML >= 0.55
+BuildRequires:	perl-parent
 %endif
 Requires:	perl-Catalyst-Plugin-ConfigLoader
 BuildArch:	noarch
