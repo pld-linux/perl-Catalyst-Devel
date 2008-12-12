@@ -33,6 +33,7 @@ BuildRequires:	perl-parent
 %endif
 Requires:	perl-Catalyst-Plugin-ConfigLoader
 Suggests:	perl-Catalyst-Manual
+Suggests:	perl-Catalyst-View-TT
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
