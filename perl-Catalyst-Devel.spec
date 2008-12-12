@@ -32,6 +32,7 @@ BuildRequires:	perl-YAML >= 0.55
 BuildRequires:	perl-parent
 %endif
 Requires:	perl-Catalyst-Plugin-ConfigLoader
+Suggests:	perl-Catalyst-Manual
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
