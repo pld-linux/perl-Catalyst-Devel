@@ -8,30 +8,30 @@
 Summary:	Catalyst::Devel - Catalyst Development Tools
 #Summary(pl.UTF-8):
 Name:		perl-Catalyst-Devel
-Version:	1.18
+Version:	1.20
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Catalyst/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	2671d57155c9ed93e3acd249bbf1cac0
+# Source0-md5:	eb699ccd64718d7c880959831a734599
 URL:		http://search.cpan.org/dist/Catalyst-Devel/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
+BuildRequires:	perl(Catalyst::Action::RenderView) >= 0.04
+BuildRequires:	perl(Catalyst::Plugin::Static::Simple) >= 0.16
 BuildRequires:	perl(Config::General) >= 2.42
-BuildRequires:	perl(File::ChangeNotify) >= 0.03
-BuildRequires:	perl-Catalyst >= 5.8000
-BuildRequires:	perl-Catalyst-Action-RenderView >= 0.04
+BuildRequires:	perl(parent)
+BuildRequires:	perl-Catalyst >= 5.80000
 BuildRequires:	perl-Catalyst-Plugin-ConfigLoader
-BuildRequires:	perl-Catalyst-Plugin-Static-Simple >= 0.16
 BuildRequires:	perl-Class-Accessor
 BuildRequires:	perl-ExtUtils-MakeMaker >= 6.42
+BuildRequires:	perl-File-ChangeNotify >= 0.07
 BuildRequires:	perl-File-Copy-Recursive
 BuildRequires:	perl-Module-Install >= 0.91
 BuildRequires:	perl-Path-Class >= 0.09
 BuildRequires:	perl-Template-Toolkit >= 2.14
-BuildRequires:	perl-parent
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -73,6 +73,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes
 %{perl_vendorlib}/Catalyst/*.pm
+%dir %{perl_vendorlib}/Catalyst/Restarter
 %{perl_vendorlib}/Catalyst/Restarter/*.pm
 %{perl_vendorlib}/Module/Install/*.pm
 %{_mandir}/man3/*
